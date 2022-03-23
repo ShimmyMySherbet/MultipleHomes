@@ -35,6 +35,7 @@ namespace ShimmyMySherbet.MultipleHomes.Commands
                 int max = plugin.GetMaxHomes(player);
                 int count = plugin.GetPlayerHomeCount(player);
 
+                //Fixes by PedroKaleb!
                 if (count >= max)
                 {
                     UnturnedChat.Say(caller, $"Sorry, but you have reached the max amount of homes: {count}/{max}");
